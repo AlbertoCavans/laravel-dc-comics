@@ -21,8 +21,8 @@ class ComicSeeder extends Seeder
 
             $comic->title = $faker->text(30);
             $comic->author = $faker->firstName();
-            $comic->cover = $faker->imageUrl(200, 300, "comic", true);
-            $comic->description = $faker->paragraph(2, true);
+            $comic->cover = $faker->imageUrl(400, 600, "comic", true);
+            $comic->description = $faker->paragraph(4, true);
             $comic->origin_country = $faker->country();
             $comic->publication_date = $faker->dateTime();
             $comic->sold_copies = $faker->randomNumber(7, false);

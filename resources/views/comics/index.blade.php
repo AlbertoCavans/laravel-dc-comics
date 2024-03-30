@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Pagina iniziale')
+@section('title', 'Comics List')
 
 @section('main-content')
   <section>
@@ -18,7 +18,7 @@
             <th>Publication Date</th>
             <th>Sold Copies</th>
             <th>Status of publication</th>
-            <th></th>
+            <th>Comic page</th>
         </thead>
 
         <tbody>
@@ -27,13 +27,13 @@
                 <td>{{ $comic->id }}</td>
                 <td>{{ $comic->title }}</td>
                 <td>{{ $comic->author }}</td>
-                <td>{{ $comic->cover }}</td>
+                <td><img src="{{ $comic->cover }}" alt="" width="100" height="150"></td>
                 <td>{{ $comic->description }}</td>
                 <td>{{ $comic->origin_country }}</td>
                 <td>{{ $comic->publication_date }}</td>
                 <td>{{ $comic->sold_copies }}</td>
                 <td>{{ $comic->publication_status }}</td>
-                <td></td>
+                <td><a href="{{ route("comics.show", $comic) }}">See details</a></td>
             </tr>
 
             @empty
