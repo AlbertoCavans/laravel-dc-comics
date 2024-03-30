@@ -30,11 +30,6 @@
         <label for="cover" class="form-label">Url Cover</label>
         <input class="form-control" id="cover"required  type="url" name="cover">
         </div>
-
-        <div class="col-8">
-        <label for="description" class="form-label">Description/Plot</label>
-        <textarea class="form-control" id="description" required type="text" name="description"></textarea>
-        </div>
         
         
         <div class="col-4">
@@ -63,11 +58,19 @@
         </div>
 
         
-    
-    
-        <div class="col-6">
-        <button class="btn btn-primary mt-4"><i class="fa-solid fa-upload"></i>  Register Comic</button>
+        <div class="col-10 mb-4">
+        <label for="description" class="form-label">Description/Plot</label>
+        <textarea class="form-control" id="description" required type="text" name="description"></textarea>
         </div>
+    
+    
+        <div class="col-3">
+           <button class="btn btn-primary"><i class="fa-solid fa-upload"></i>  Register Comic</button>
+        </div>
+
+        <div class="col-3">
+            <a href="{{ route("comics.index") }}" class="btn btn-secondary"><i class="fa-solid fa-rotate-left"></i> Go back to list</a>
+         </div>
 
         
       </form>
