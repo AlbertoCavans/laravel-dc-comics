@@ -23,6 +23,7 @@
             <th>Status of publication</th>
             <th>Comic page</th>
             <th>Fix info</th>
+            <th>Delete comic</th>
         </thead>
 
         <tbody>
@@ -39,6 +40,12 @@
                 <td>{{ $comic->publication_status }}</td>
                 <td><a href="{{ route("comics.show", $comic) }}">See details</a></td>
                 <td><a href="{{ route("comics.edit", $comic->id) }}"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                <td><form action="{{ route("comics.destroy", $comic) }}" method="POST">
+                @csrf
+                @method('DELETE')
+                  <button class="btn btn-warning"> <i class="fa-solid fa-rectangle-xmark text-danger"></i></button>
+                </form></td>
+
             </tr>
 
             @empty
