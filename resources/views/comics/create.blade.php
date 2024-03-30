@@ -16,13 +16,13 @@
         </div>
 
         <div class="col-4">
-        <label for="first_name_author" class="form-label">First Name Author</label>
-        <input class="form-control" id="first_name_author" required type="text" name="first_name_author">
+        <label for="author_first_name" class="form-label">First Name Author</label>
+        <input class="form-control" id="author_first_name" required type="text" name="author_first_name">
         </div>
 
         <div class="col-4">
-        <label for="last_name_author" class="form-label">Last Name Author</label>
-        <input class="form-control" id="last_name_author" required type="text" name="last_name_author">
+        <label for="author_last_name" class="form-label">Last Name Author</label>
+        <input class="form-control" id="author_last_name" required type="text" name="author_last_name">
         </div>
 
         

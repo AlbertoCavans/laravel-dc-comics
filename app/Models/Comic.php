@@ -10,7 +10,7 @@ class Comic extends Model
     use HasFactory;
 
     protected $fillable = [
-        "title", "first_name_author", "last_name_author", "cover", 
+        "title", "author_first_name", "author_last_name", "cover", 
         "origin_country", "publication_date", "sold_copies", 
         "publication_status", "description"];
 

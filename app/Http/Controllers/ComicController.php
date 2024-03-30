@@ -39,8 +39,8 @@ class ComicController extends Controller
         $comic = new Comic;
         $comic->fill($data);
        /*  $comic->title = $data["title"];
-        $comic->first_name_author = $data["first_name_author"];
-        $comic->last_name_author = $data["last_name_author"];
+        $comic->author_first_name = $data["first_name_author"];
+        $comic->author_last_name = $data["last_name_author"];
         $comic->cover = $data["cover"]; 
         $comic->origin_country = $data["origin_country"];
         $comic->publication_date = $data["publication_date"];
