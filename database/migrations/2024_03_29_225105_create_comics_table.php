@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('author_last_name', 30)->nullable();
             $table->string('cover')->nullable();
             $table->text('description')->nullable();
-            $table->string('origin_country', 50)->nullable();
+            $table->string('origin_country', 100)->nullable();
             $table->date('publication_date')->nullable();
             $table->integer('sold_copies')->nullable();
             $table->enum('publication_status', ['ongoing','finished','paused','uncompleted'])->nullable();
