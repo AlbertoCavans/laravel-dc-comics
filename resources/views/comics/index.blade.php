@@ -5,6 +5,9 @@
 @section('main-content')
   <section>
     <div class="container py-4">
+
+    <a href="{{ route("comics.create") }}" class="btn btn-success">Upload new comic</a>
+
       <h1>Comics List</h1>
 
       <table class="table">
