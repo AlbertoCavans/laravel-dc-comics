@@ -26,7 +26,7 @@
             <tr>
                 <td>{{ $comic->id }}</td>
                 <td>{{ $comic->title }}</td>
-                <td>{{ $comic->author }}</td>
+                <td>{{ $comic->get_full_name_author() }}</td>
                 <td><img src="{{ $comic->cover }}" alt="" width="100" height="150"></td>
                 <td>{{ $comic->description }}</td>
                 <td>{{ $comic->origin_country }}</td>

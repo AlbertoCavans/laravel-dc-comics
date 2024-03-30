@@ -14,7 +14,7 @@
         <div class="col-8">
             <div class="row">
                 <div class="col-6">
-                    <h5><strong>Author: </strong>{{ $comic->author }}</h5>
+                    <h5><strong>Author: </strong>{{ $comic->get_full_name_author() }}</h5>
                 </div>
                 <div class="col-6">
                     <h5><strong>Origin Country: </strong>{{ $comic->origin_country }}</h5>

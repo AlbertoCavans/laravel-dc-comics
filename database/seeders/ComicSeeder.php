@@ -20,7 +20,8 @@ class ComicSeeder extends Seeder
             $comic = new Comic;
 
             $comic->title = $faker->text(30);
-            $comic->author = $faker->firstName();
+            $comic->author_first_name = $faker->firstName();
+            $comic->author_last_name = $faker->lastName();
             $comic->cover = $faker->imageUrl(400, 600, "comic", true);
             $comic->description = $faker->paragraph(4, true);
             $comic->origin_country = $faker->country();
