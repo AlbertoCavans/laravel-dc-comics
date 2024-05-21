@@ -3,7 +3,7 @@
 @section('title', "Details $comic->title")
 
 @section('main-content')
-  <section class="bg-primary p-3">
+  <section class="my-3">
     <div class="container bg-light rounded py-3">
 
     <div class="card">

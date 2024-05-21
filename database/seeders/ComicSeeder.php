@@ -22,7 +22,7 @@ class ComicSeeder extends Seeder
             $comic->title = $faker->text(30);
             $comic->author_first_name = $faker->firstName();
             $comic->author_last_name = $faker->lastName();
-            $comic->cover = $faker->imageUrl(400, 600, "comic", true);
+            $comic->cover = $faker->imageUrl(400, 600, "comic-cover", true);
             $comic->description = $faker->paragraph(4, true);
             $comic->origin_country = $faker->country();
             $comic->publication_date = $faker->dateTime();

@@ -16,7 +16,7 @@
     <div class="wrapper">
       @include('partials.header')
 
-      <main>
+      <main class="bg-primary p-3">
         @yield('main-content')
       </main>
 

@@ -3,7 +3,7 @@
 @section('title', 'Fix info Comic')
 
 @section('main-content')
-  <section class="bg-primary p-3">
+  <section>
     <div class="container bg-light rounded py-4">
 
     <div class="card">
