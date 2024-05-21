@@ -3,13 +3,16 @@
 @section('title', 'Comics List')
 
 @section('main-content')
-  <section>
+  <section class="bg-primary">
     <div class="container py-4">
 
-    <a href="{{ route("comics.create") }}" class="btn btn-success">Upload new comic</a>
+      <h1 class="text-white">Comics List</h1>
+      <div class="card">
+      <div class="card-header">
+          <a href="{{ route("comics.create") }}" class="btn btn-success">Upload new comic</a>
+      </div>
 
-      <h1>Comics List</h1>
-
+      <div class="card-body">
       <table class="table">
         <thead>
             <th>ID</th>
@@ -55,8 +58,12 @@
             @endforelse
         </tbody>
       </table>
-
+      </div>
+      <div class="card-footer">
+      
       {{$comics->links()}}
+      </div>
+      </div>
     </div>
   </section>
 @endsection

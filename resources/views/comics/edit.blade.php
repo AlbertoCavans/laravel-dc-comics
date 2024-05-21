@@ -3,9 +3,15 @@
 @section('title', 'Fix info Comic')
 
 @section('main-content')
-  <section>
-    <div class="container py-4">
+  <section class="bg-primary p-3">
+    <div class="container bg-light rounded py-4">
+
+    <div class="card">
+    <div class="card-header"> 
       <h1>Fix info Comic: {{ $comic->title }}</h1>
+      </div>
+
+      <div class="card-body"> 
 
       <form action="{{ route("comics.update", $comic->id) }}" class="row" method="POST">
         @csrf
@@ -79,7 +85,9 @@
 
         
       </form>
+      </div>
     </div>
+     </div>
   </section>
 @endsection
 

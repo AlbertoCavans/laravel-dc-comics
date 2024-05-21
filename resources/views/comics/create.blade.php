@@ -3,8 +3,9 @@
 @section('title', 'Register a New Comic')
 
 @section('main-content')
-  <section>
-    <div class="container py-4">
+  <section class="bg-primary p-3">
+  <h2></h2>
+    <div class="container py-4 bg-light rounded">
       <h1>Register a New Comic</h1>
 
       <form action="{{ route("comics.store") }}" class="row" method="POST">

@@ -3,9 +3,18 @@
 @section('title', "Details $comic->title")
 
 @section('main-content')
-  <section>
-    <div class="container py-4">
+  <section class="bg-primary p-3">
+    <div class="container bg-light rounded py-3">
+
+    <div class="card">
+
+    <div class="card-header">
+    
       <h1>Details of "{{ $comic->title }}"</h1>
+      </div>
+
+          <div class="card-body">
+          
 
       <div class="row">
         <div class="col-4">
@@ -49,6 +58,8 @@
 
             </div>
         </div>
+        </div>
+      </div>
       </div>
     </div>
   </section>
