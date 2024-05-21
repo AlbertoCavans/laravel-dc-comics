@@ -1,32 +1,45 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Per aprire il progetto
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## Init project
-
-Per il frontend:
+Aprire un primo terminale su VScode:
 
 ```
 npm install
 npm run dev
 ```
 
-Per il backend:
+Aprire un secondo terminale su VScode:
 
 ```
 composer install
 php artisan serve
 ```
 
-Poi copia il file `.env.example` in `.env` e configura la connessione al DB
+Poi copia il file `.env.example` in `.env` e configura la connessione al Database
 
-## Create a controller
+## Obiettivi del progetto
 
-...
+Creare un progetto Laravel 9 per gestire un archivio di fumetti.
 
-## Create a model
+### Milestone 1
+
+Tramite gli appositi comandi artisan creare un model con relativa migration e un resource controller.
+
+### Milestone 2
+
+Iniziare a definire le prime operazioni CRUD con le relative view:
+
+    index()
+    show()
+    create()
+    store()
+
+Bonus:
+
+creare il seeder per la tabella comics utilizzando il file in allegato.
+
+### Milestone 3
+
+Completare le operazioni CRUD.
+
+Bonus:
+tramite javascript (integrato in Bootstrap), quando l'utente clicca sul pulsante "delete", chiedere conferma della cancellazione, prima di eliminare l'elemento.
