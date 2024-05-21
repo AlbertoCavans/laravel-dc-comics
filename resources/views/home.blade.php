@@ -6,23 +6,31 @@
 @section('main-content')
   <section>
     <div class="container py-4">
+    {{-- Page title --}}
       <h1 class="text-white">Laravel DC Comics</h1>
+
+      {{-- Jumbotron --}}
       <div class="jumbo d-flex justify-content-center">
        <img src="https://placehold.co/1800x1200?text=This+is+a+placeholder" class="w-100 mb-3">
        </div>
 
        <div class="card mb-3 w-75">
+       {{-- Welocome text --}}
        <p class="h5 p-4 ">
        Welcome to our Comics Platform, here you can find information about your favourite comics and
        you can buy them with few clicks.
 
        Go to our Comics List and choose your next purchase.
        </p>
+
+       {{-- Upload new comic button --}}
        <div class="d-flex">
        <a href="{{ route("comics.create") }}" class="btn btn-success m-3 w-25">
        <span class="d-none d-md-inline">Upload new comic</span>
        <span class="d-inline d-md-none"><i class="fa-solid fa-upload"></i></span>
        </a>
+
+       {{-- Go to comics-list button --}}
        <a href="{{ route("comics.index") }}" class="btn btn-secondary m-3 w-25">
        <span class="d-none d-md-inline">Go to our comics list</span>
        <span class="d-inline d-md-none"><i class="fa-solid fa-table-list"></i></span>

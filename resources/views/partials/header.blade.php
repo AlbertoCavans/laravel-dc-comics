@@ -1,6 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
+    {{-- Second title + second link to home --}}
       <a class="navbar-brand h2" href="{{ route('home') }}">Laravel DC Comics</a>
       <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
         class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
@@ -8,9 +9,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        {{-- Link to Home --}}
           <li class="nav-item">
             <a @class(['nav-link', 'active' => Route::currentRouteName() == 'home']) aria-current="page" href="{{ route('home') }}">Home</a>
           </li>
+          {{-- Link to comics-list --}}
           <li class="nav-item">
             <a @class(['nav-link', 'active' => Route::currentRouteName() == 'comics.index']) aria-current="page" href="{{ route('comics.index') }}">Comics list</a>
           </li>
